@@ -18,6 +18,15 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+.search-form{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: blue;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
