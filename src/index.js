@@ -29,9 +29,10 @@ async function onSearch(event) {
       );
       return;
     }
-      clearGallery();
-      renderContent(imagesSet);
-      getImages.incrementPage();
+    clearGallery();
+    renderContent(imagesSet);
+    
+    getImages.incrementPage();
 
     if (imagesSet.length < 40) {
       refs.loadMoreBtn.style.display = 'none';
@@ -61,16 +62,16 @@ function createCard(item) {
   <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy" height="200"/>
   <div class="info">
     <p class="info-item">   
-      <b>${item.likes}</b>
+      <b>Likes </b>${item.likes}
     </p>
     <p class="info-item">
-      <b>${item.views}</b>
+      <b>Views</b>${item.views}
     </p>
     <p class="info-item">
-      <b>${item.comments}</b>
+      <b>Comments</b>${item.comments}
     </p>
     <p class="info-item">
-      <b>${item.downloads}</b>
+      <b>Downloads</b>${item.downloads}
     </p>
   </div>
 </div>`;
